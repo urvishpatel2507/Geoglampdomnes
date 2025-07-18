@@ -1,0 +1,106 @@
+# ======================
+# WORDPRESS CORE
+# ======================
+wp-config.php
+wp-config-sample.php
+.htaccess
+wp-content/debug.log
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/db.php
+
+# Core directories (reinstallable)
+/wp-admin/
+/wp-includes/
+
+# ======================
+# CONTENT DIRECTORY
+# ======================
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backup*
+/wp-content/cache/
+/wp-content/wflogs/
+/wp-content/wp-rocket-config/
+/wp-content/litespeed/
+
+# ======================
+# PLUGINS & THEMES
+# ======================
+/wp-content/plugins/*
+!/wp-content/plugins/index.php
+!/wp-content/plugins/my-custom-plugin/
+
+# Exclude common default plugins
+/wp-content/plugins/hello.php
+/wp-content/plugins/akismet/
+
+# Theme development cache
+/wp-content/themes/*/node_modules/
+
+# ======================
+# DEVELOPMENT & ENVIRONMENT
+# ======================
+.env
+*.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+
+# Composer/NPM
+/vendor/
+/node_modules/
+/package-lock.json
+/composer.lock
+yarn.lock
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# ======================
+# DATABASE & BACKUPS
+# ======================
+*.sql
+*.zip
+*.gz
+*.bak
+*.backup
+
+# ======================
+# SYSTEM FILES
+# ======================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+error_log
+
+# ======================
+# TESTING & QUALITY
+# ======================
+phpunit.xml
+.coverage/
+*.cache
+.scannerwork/
+
+# ======================
+# DEPLOYMENT ARTIFACTS
+# ======================
+/build/
+/dist/
+*.tar.gz
+*.rar
+
+# ======================
+# MISCELLANEOUS
+# ======================
+/wp-cli.yml
+/wp-content/mu-plugins/*.tmp
+*.orig
+*.rej
